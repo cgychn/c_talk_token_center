@@ -34,7 +34,7 @@ public class DESUtil {
         String f = DigestUtils.md5Hex(key);
         byte[] bkeys = new String(f).getBytes();
         byte[] enk = new byte[24];
-        for (int i=0;i<24;i++){
+        for (int i = 0; i < 24; i ++){
             enk[i] = bkeys[i];
         }
         return enk;
