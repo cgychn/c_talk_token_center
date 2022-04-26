@@ -1,0 +1,15 @@
+server:
+  port: 9099
+
+spring:
+  application:
+    name: c-talk-token-center
+
+eureka:
+  instance:
+    hostname: 10.0.0.37
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://10.0.0.37:9099/eureka/
